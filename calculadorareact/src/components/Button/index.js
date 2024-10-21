@@ -1,11 +1,14 @@
 
-const Button = () => { 
+import { ButtonContainer } from "./styles";
+
+const Button = ({label, onCLick}) => { 
 
     return (
-    <div className="App">
+    <ButtonContainer onClick={onCLick}>
+      {label}
+      </ButtonContainer>
     
-    </div>
-  );
+      );
 }
 
 export default Button;
