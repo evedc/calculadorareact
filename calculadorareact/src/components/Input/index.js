@@ -1,11 +1,10 @@
 import { InputContainer } from "./styles";
-const Input = () => { 
 
-    return (
+const Input = ({ value }) => {
+  return (
     <InputContainer>
-
-    <input disabled value={value}/>
-    
+      {/* Input desabilitado com valor vindo das props */}
+      <input disabled value={value} />
     </InputContainer>
   );
 }
