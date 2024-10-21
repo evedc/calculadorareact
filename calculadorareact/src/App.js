@@ -10,7 +10,7 @@ const App = () => {
     <Container>
     <Content>
       <Input />
-      Olá
+  
     </Content>
     </Container>
     </div>
