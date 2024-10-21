@@ -2,15 +2,29 @@
 
 import Input from './components/Input';
 import Button from './components/Button';
-import { Container, Content, Row, Column } from "./styles";
+import { Container, Content, Row } from "./styles";
+import { useState } from 'react';
+
+
 
 
 const App = () => {
+   const [currentNumber, setCurrentNumber] = useState('0');
+   const handleAddNumber = (number) => {
+      setCurrentNumber(prev => `${number}${prev}`)
+   }
   return (
     <div className="App">
     <Container>
     <Content>
-      <Input />
+      <Input value={currentNumber}/>
+
+      <Row>
+         <Button label="x"/>
+         <Button label="/" />
+         <Button label="C"/>
+         <Button label="X"/>
+      </Row>
 
       <Row>
          <Button label="7"/>
@@ -29,7 +43,7 @@ const App = () => {
          <Button label="1"/>
          <Button label="2" />
          <Button label="3"/>
-         <Button label="="/>
+         <Button label="=" onCLick={() => handleAddNumber (' ')}/>
       </Row>
 
  

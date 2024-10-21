@@ -3,8 +3,8 @@ const Input = () => {
 
     return (
     <InputContainer>
-    Olá
-    <input />
+
+    <input disabled value={value}/>
     
     </InputContainer>
   );

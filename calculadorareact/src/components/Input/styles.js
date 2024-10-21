@@ -6,9 +6,10 @@ height: 75px;
 
 background-color: #AAFFAA;
 display: flex;
-npm s
+
 align-items: center;
 justify-content: flex-end;
+
 font-size: 24px;
 font-family: 'Roboto';
 
