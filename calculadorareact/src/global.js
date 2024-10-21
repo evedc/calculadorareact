@@ -1,7 +1,7 @@
 import {createGlobalStyle, GlobalStyleComponent} from 'styled-components';
 
 export default createGlobalStyle`
-* body {
+*, body {
 margin: 0;
 padding: 0;
 }
